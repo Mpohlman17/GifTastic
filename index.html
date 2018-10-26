@@ -7,27 +7,40 @@
     crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Assets/style.css" type="text/css">
+  <link rel="stylesheet" href="Assets/style.css" type="text/css">
   <!-- <link rel="stylesheet" type="text/css" href=""> -->
 </head>
 
 <body>
-  <div class="container">
-    <h1>NFL Teams</h1>
+  <div background-image=url(https://i.pinimg.com/474x/bc/13/e9/bc13e95227fd5981d7aa33ad47b0d644--iphone-backgrounds-phone-wallpapers.jpg)> 
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">
+        <div class="animate one">
+          <span>N</span><span>F</span><span>L</span><span> &nbsp;
+            <span>T</span><span>E</span><span>A</span><span>M</span><span>S</span><span>!</span>
+        </div>
+      </h1>
 
-    <div id="gifButtons"></div>
+      <div id="gifButtons" type="buttons" class="btn btn-outline-danger"></div>
 
-    <form id="gif-form" role="form">
-      <h3>Fun NFL Gifs</h3>
-      <div class="form-group">
-        <label for="team-input">Add NFL Team</label>
-        <input type="text" id="team-input">
-      </div>
-      <input id="addGif" type="submit" value="Add NFL Team" class="btn btn-primary">
-      <input id="removeGif" type="submit" value="Remove last button" class="btn btn-primary">
-    </form>
+      <form id="gif-form" role="form">
+        <h3>Please search for your favorite team to get started</h3>
+        <div class="form-group">
+          <label for="team-input"></label>
+          <input type="text" id="team-input">
+        </div>
+        <input id="addGif" type="submit" value="Add NFL Team" class="btn btn-primary">
+        <input id="removeGif" type="submit" value="Remove last button" class="btn btn-primary">
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="gifContainer">
 
-    <div id="gifsView"></div>
+      <div id="gifsView"></div>
+    </div>
   </div>
 
 

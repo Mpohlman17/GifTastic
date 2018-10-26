@@ -12,7 +12,7 @@ $(document).ready(function () {
             $("#gifButtons").append(gifButton);
         }
     }
-    //////render the new buttons displayed after add button has been clicked/////
+    //////Render the new buttons displayed after add button has been clicked/////
     function renderButton() {
         $("#addGif").on("click", function () {
             var textBtn = $("#team-input").val().trim();
@@ -56,7 +56,7 @@ $(document).ready(function () {
 
                     var gifRating = $("<p>").text("Rating: " + results[i].rating);
                     gifDiv.append(gifRating);
-
+                    // console.log("rating: " + gifRating);
                     var gifImage = $("<img>")
                     gifImage.attr("src", results[i].images.fixed_height_still.url)
                     gifImage.attr("data-still", results[i].images.fixed_height_still.url)
